@@ -1,0 +1,22 @@
+{
+    "name": "meli-tiendas-oficiales"
+  , "version": "0.0.1"
+  , "description": "Scrapper for seller_id de Tiendas Oficiales de MercadoLibre"
+  , "private": true
+  , "main": "server.js"
+  , "keywords": [
+      "meli"
+    , "tiendas-oficiales"
+    , "mercadolibre"
+  ]
+  , "author": "Marcos Chicote"
+  , "engines": {
+      "node": "0.10.33"
+    , "npm": "1.4.28"
+  }
+  , "dependencies" : {
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "async"      : "latest"
+  }
+}
