@@ -16,7 +16,7 @@ findSellerId = function(elem, callback) {
 
 		var sellerId = afterSlash.substring(0, bkgIndex);
 
-		var e = {name: name, sellerId: sellerId};
+		var e = {store_name: name, store_id: sellerId};
 		
 		callback(null, e);
 	});
@@ -39,10 +39,12 @@ request(url, function(error, response, html) {
 												});
 
 		async.map(
+			// [tiendasOficiales[0]]
 			tiendasOficiales
 			, findSellerId
 			, function(err, results) {
-				console.log(results);	
+
+				console.log(JSON.stringify(results));	
 			}
 		)
 	}
